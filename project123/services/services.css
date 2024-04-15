@@ -1,0 +1,88 @@
+/* Styles for service cards */
+body{
+    
+}
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service-card {
+    border: 2px solid black;
+    font-size: 20px;
+    width: 30%;
+    background-color: #c2e268;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-card:hover {
+    background-color: #60a8ba;
+  }
+  
+  .service-card h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: #f43b3b;
+    
+  }
+  
+  .service-card p {
+    color: #ee03da;
+  }
+  
+  /* Styles for modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    font-size: 20px;
+    background-color: #cd83c8;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    color: aliceblue;
+    
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .service-card {
+      width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .service-card {
+      width: 90%;
+    }
+  }
+  

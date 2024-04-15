@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Services</title>
+  <link rel="stylesheet" href="services.css">
+</head>
+<body>
+  <div class="services-container">
+    <div class="service-card" onclick="showDetails(1)">
+      <h2>Food Catering</h2>
+      <p>We provide catering services for events of all sizes.</p>
+      <ul class="service-items">
+        <li>Appetizers</li>
+        <li>Main Course</li>
+        <li>Side Dishes</li>
+        <li>Desserts</li>
+        <li>Beverages</li>
+      </ul>
+    </div>
+    <div class="service-card" onclick="showDetails(2)">
+      <h2>Home Delivery</h2>
+      <p>Get your favorite food delivered to your doorstep.</p>
+      <ul class="service-items">
+        <li>Pizza</li>
+        <li>Burgers</li>
+        <li>Pasta</li>
+        <li>Sushi</li>
+        <li>Salads</li>
+      </ul>
+    </div>
+    <div class="service-card" onclick="showDetails(3)">
+      <h2>Private Chef</h2>
+      <p>Hire a private chef for an intimate dining experience.</p>
+      <ul class="service-items">
+        <li>Custom Menu Creation</li>
+        <li>Personalized Dining Experience</li>
+        <li>Special Dietary Accommodations</li>
+        <li>Wine Pairing</li>
+        <li>Chef's Specials</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="details-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="hideDetails()">&times;</span>
+      <h2 id="service-title"></h2>
+      <p id="service-description"></p>
+      <ul id="service-items-list"></ul>
+    </div>
+  </div>
+
+  <script src="services.js"></script>
+</body>
+</html>
